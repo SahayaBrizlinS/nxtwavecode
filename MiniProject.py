@@ -276,68 +276,6 @@ def Quiz_App():
     print(f"\nYour final score is: {score}/{len(questions_list)}")
     print("Closing Quiz App")
 
-    options = [
-        ["a) 6", "b) 5", "c) 8"],
-        ["a) HTML", "b) List", "c) HTTP"],
-        ["a) .py", "b) .pyt", "c) .pt"],
-        ["a) fun", "b) func", "c) def"],
-        ["a) def myfunc():", "b) function myfunc()", "c) create myfunc()"],
-        ["a) List", "b) Dictionary", "c) Folder"],
-        ["a) for i in 5", "b) for i in range(5):", "c) foreach i in range(5)"],
-        ["a) include", "b) in", "c) has"],
-        ["a) //", "b) /", "c) %"],
-        ["a) Curly braces", "b) Semicolon", "c) Indentation"],
-        ["a) <class 'list'>", "b) <class 'tuple'>", "c) <class 'dict'>"],
-        ["a) try", "b) catch", "c) except"],
-        ["a) [1: 'a']", "b) ['key': 'value']", "c) {'key': 'value'}"],
-        ["a) class", "b) define", "c) defclass"],
-        ["a) <class 'list'>", "b) <class 'tuple'>", "c) <class 'dict'>"],
-        ["a) Stops program", "b) Breaks from function", "c) Placeholder"],
-        ["a) for", "b) while", "c) switch"],
-        ["a) Exits loop", "b) Skips to next iteration", "c) Stops program"],
-        ["a) function()", "b) create()", "c) def function():"],
-        ["a) re", "b) regex", "c) expression"],
-        ["a) inherit", "b) class Derived(Base)", "c) base"],
-        ["a) <class 'int'>", "b) <class 'char'>", "c) <class 'str'>"],
-        ["a) tuple", "b) list", "c) set"],
-        ["a) Integrated Developer Editor", "b) Integrated Development Environment", "c) Internal Dev Environment"],
-        ["a) Python Index Package", "b) Python Integrated Platform", "c) Preferred Installer Program"],
-        ["a) push()", "b) append()", "c) add()"],
-        ["a) 6", "b) 6", "c) 5"],
-        ["a) To confuse compiler", "b) To shorten code", "c) Define blocks"],
-        ["a) class", "b) module", "c) dictionary"],
-        ["a) @", "b) module", "c) def"],
-        ["a) 10", "b) 14", "c) 3"],
-        ["a) False", "b) Error", "c) True"],
-        ["a) if (condition)", "b) if condition", "c) if condition:"],
-        ["a) const", "b) No fixed way", "c) static"],
-        ["a) Function calling itself", "b) Loop inside loop", "c) Calling external lib"],
-        ["a) lambda args: expression", "b) lambda =>", "c) lambda x: x+2"],
-        ["a) list", "b) tuple", "c) integer"],
-        ["a) max()", "b) highest()", "c) max_value()"],
-        ["a) char()", "b) ascii()", "c) ord()"],
-        ["a) Interpreted & dynamic", "b) Interpreted", "c) Compiled"],
-        ["a) set()", "b) {}", "c) []"],
-        ["a) size()", "b) count()", "c) len()"],
-        ["a) Yes", "b) Sometimes", "c) No"],
-        ["a) array", "b) str", "c) set"],
-        ["a) aaa", "b) a3", "c) aaa"]
-    ]
-
-    questions_list = list(questions.items())
-    score = 0
-    for i, (question, correct_answer) in enumerate(questions_list):
-        print(f"\n{question}")
-        for option in options[i]:
-            print(option)
-        answer = input("Enter your answer (a/b/c): ").lower()
-        if answer == correct_answer:
-            print("Correct!")
-            score += 1
-        else:
-            print("Wrong!")
-    print(f"\nYour final score is: {score}/{len(questions_list)}")
-
 def Data_Visualization():
   import yfinance as yf
   import pandas as pd
